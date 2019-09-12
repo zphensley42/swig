@@ -833,7 +833,7 @@ static int look(Scanner *s) {
 	return SWIG_TOKEN_MODEQUAL;
       } else if (c == '}') {
 	Swig_error(cparse_file, cparse_line, "Syntax error. Extraneous '%%}'\n");
-	exit(1);
+	SWIG_exit(EXIT_FAILURE);
       } else {
 	retract(s, 1);
 	return SWIG_TOKEN_PERCENT;
@@ -1160,6 +1160,8 @@ static int look(Scanner *s) {
 	return SWIG_TOKEN_INT;
       if (isdigit(c))
 	state = 84;
+      else if ((c == 'e') || (c == 'E'))
+	state = 82;
       else if ((c == 'x') || (c == 'X'))
 	state = 85;
       else if ((c == 'b') || (c == 'B'))
@@ -1181,6 +1183,10 @@ static int look(Scanner *s) {
 	return SWIG_TOKEN_INT;
       if (isdigit(c))
 	state = 84;
+      else if (c == '.')
+	state = 81;
+      else if ((c == 'e') || (c == 'E'))
+	state = 82;
       else if ((c == 'l') || (c == 'L')) {
 	state = 87;
       } else if ((c == 'u') || (c == 'U')) {

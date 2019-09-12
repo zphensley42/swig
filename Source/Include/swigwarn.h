@@ -211,6 +211,7 @@
 #define WARN_LANG_EXTEND_CONSTRUCTOR  522
 #define WARN_LANG_EXTEND_DESTRUCTOR   523
 #define WARN_LANG_EXPERIMENTAL        524
+#define WARN_LANG_DIRECTOR_FINAL      525
 
 /* -- Doxygen comments -- */
 
@@ -220,6 +221,7 @@
 #define WARN_DOXYGEN_HTML_ERROR               563
 #define WARN_DOXYGEN_COMMAND_ERROR            564
 #define WARN_DOXYGEN_UNKNOWN_CHARACTER        565
+#define WARN_DOXYGEN_UNEXPECTED_ITERATOR_VALUE  566
 
 /* -- Reserved (600-799) -- */
 

@@ -324,6 +324,7 @@ CPP_TEST_CASES += \
 	nested_directors \
 	nested_comment \
 	nested_ignore \
+	nested_inheritance_interface \
 	nested_in_template \
 	nested_scope \
 	nested_template_base \
@@ -407,6 +408,7 @@ CPP_TEST_CASES += \
 	static_array_member \
 	static_const_member \
 	static_const_member_2 \
+	stl_no_default_constructor \
 	string_constants \
 	struct_initialization_cpp \
 	struct_value \
@@ -571,6 +573,7 @@ CPP11_TEST_CASES += \
 	cpp11_director_enums \
 	cpp11_directors \
 	cpp11_explicit_conversion_operators \
+	cpp11_final_directors \
 	cpp11_final_override \
 	cpp11_function_objects \
 	cpp11_inheriting_constructors \
@@ -618,6 +621,7 @@ DOXYGEN_TEST_CASES += \
 	doxygen_alias \
 	doxygen_basic_notranslate \
 	doxygen_basic_translate \
+	doxygen_basic_translate_style2 \
 	doxygen_ignore \
 	doxygen_misc_constructs \
 	doxygen_nested_class \
@@ -639,6 +643,7 @@ CPP_STD_TEST_CASES += \
 	director_string \
 	ignore_template_constructor \
 	li_std_combinations \
+	li_std_containers_overload \
 	li_std_deque \
 	li_std_except \
 	li_std_except_as_class \
@@ -651,6 +656,7 @@ CPP_STD_TEST_CASES += \
 	li_std_vector_enum \
 	li_std_vector_member_var\
 	li_std_vector_ptr \
+	li_std_wstring \
 	smart_pointer_inherit \
 	template_typedef_fnc \
 	template_type_namespace \
